@@ -688,21 +688,23 @@
         <span class="button__text"> Сохранить на память </span>
       </button>
       <dialog id="dialog-id">
-        <div class="dialog_content">
-          <img
-            src="./svg/floppy.svg"
-            alt="Иконка дискеты"
-            class="dialog_floppy"
-          />
-          <h2 class="dialog_info">Вставьте дискету, чтобы продолжить</h2>
-        </div>
-        <button
-          type="button"
-          onclick="window['dialog-id'].close()"
-          class="dialog-close-btn"
-        >
-          ок
-        </button>
+        <form method="dialog">
+          <div class="dialog_content">
+            <img
+              src="./svg/floppy.svg"
+              alt="Иконка дискеты"
+              class="dialog_floppy"
+            />
+            <h2 class="dialog_info">Вставьте дискету, чтобы продолжить</h2>
+          </div>
+          <button
+            type="button"
+            onclick="window['dialog-id'].close()"
+            class="dialog-close-btn"
+          >
+            ок
+          </button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
