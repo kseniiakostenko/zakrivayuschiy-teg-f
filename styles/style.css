@@ -169,12 +169,12 @@
   opacity: 0.5;
 }
 
-/*@supports((text-stroke: 1px var(--border-color)) or (-webkit-text-stroke: 1px var(--border-color))) {
+@supports((text-stroke: 1px var(--border-color)) or (-webkit-text-stroke: 1px var(--border-color))) {
   .label {
     -webkit-text-stroke: 1px var(--border-color);
     text-shadow: none;
   }
-}*/
+}
 
 .container_content_paragraph {
   margin: 25px 29px 0 25px;
@@ -422,7 +422,6 @@
 
 dialog {
   position: relative;
-  padding: 0;
   max-inline-size: 341px;
   inline-size: 95%;
   min-inline-size: 250px;
@@ -453,9 +452,6 @@ dialog {
   margin-top: 12px;
 }
 
-.footer_button_image path {
-  fill: var(--accent-color);
-}
 
 .dialog_floppy path {
   fill: var(--accent-color);
