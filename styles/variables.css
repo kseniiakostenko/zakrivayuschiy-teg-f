@@ -1,1 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter", Arial;
+  --accent-font: "PressStart2P", sans-serif;
+  --card-text-weight: 400;
+  --card-title-weight: 700;
+  --background-color: rgba(255, 255, 255, 1);
+  --border-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --background-image-gradient: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 2px,
+      #d3d3d3 2px,
+      var(--background-color) 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 2px,
+      #d3d3d3 2px,
+      var(--background-color) 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --heart_sparks: rgba(255, 0, 0, 1);
+  --heart-contour: rgba(0, 0, 0, 1);
+  --heart-main-color: rgba(0, 0, 0, 1);
+  --heart-accent-color: rgba(255, 0, 0, 1);
+  --label-size: 14px;
+}
