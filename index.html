@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <meta name="color-scheme" content="dark light" />
@@ -18,8 +18,8 @@
   <body class="page">
     <header class="header">
       <div class="head_group">
-        <h1 class="head_title">&lt;/HTML&gt;</h1>
-        <h2 class="heading">закрывающий тег</h2>
+        <h1 class="head_title" tabindex="-1">&lt;/HTML&gt;</h1>
+        <h1 class="heading">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -49,9 +49,9 @@
     </header>
     <main class="content">
       <div class="content_text-block">
-        <h3 class="content_title">
+        <h2 class="content_title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
         <div class="container_image">
           <img
             class="content_image"
@@ -119,7 +119,7 @@
         </div>
       </div>
       <div class="content_text-block">
-        <h3 class="content_title">1 спринт: Я — чистый лист</h3>
+        <h2 class="content_title">1 спринт: Я — чистый лист</h2>
         <div class="container_image">
           <img
             class="content_image saturated-image"
@@ -190,7 +190,7 @@
         </div>
       </div>
       <div class="content_text-block">
-        <h3 class="content_title">1 спринт: А если не получится?</h3>
+        <h2 class="content_title">1 спринт: А если не получится?</h2>
         <div class="container_image">
           <img
             class="content_image vivid-image"
@@ -212,7 +212,7 @@
           </p>
         </div>
         <div class="group_of_buttons">
-          <button class="card__icon-button2">
+          <button class="card__icon-button">
             <svg
               id="heart_icon3"
               width="39"
@@ -258,7 +258,7 @@
         </div>
       </div>
       <div class="content_text-block">
-        <h3 class="content_title">2 спринт: Погоня за идеалом</h3>
+        <h2 class="content_title">2 спринт: Погоня за идеалом</h2>
         <div class="container_image">
           <img
             class="content_image bright-image"
@@ -326,7 +326,7 @@
         </div>
       </div>
       <div class="content_text-block">
-        <h3 class="content_title">2 спринт: О тех, кто рядом</h3>
+        <h2 class="content_title">2 спринт: О тех, кто рядом</h2>
         <div class="container_image">
           <img
             class="content_image rotated-image"
@@ -398,7 +398,7 @@
         </div>
       </div>
       <div class="content_text-block">
-        <h3 class="content_title">3 спринт: Обходные стратегии</h3>
+        <h2 class="content_title">3 спринт: Обходные стратегии</h2>
         <div class="container_image">
           <img
             class="content_image sepia-image"
@@ -464,7 +464,7 @@
         </div>
       </div>
       <div class="content_text-block">
-        <h3 class="content_title">3 спринт: Когда опускаются руки</h3>
+        <h2 class="content_title">3 спринт: Когда опускаются руки</h2>
         <div class="container_image">
           <img
             class="content_image blur-image"
@@ -532,7 +532,7 @@
         </div>
       </div>
       <div class="content_text-block">
-        <h3 class="content_title">«Сейчас я здесь»</h3>
+        <h2 class="content_title">«Сейчас я здесь»</h2>
         <div class="container_image">
           <img
             class="content_image invert-image"
@@ -688,15 +688,19 @@
         <span class="button__text"> Сохранить на память </span>
       </button>
       <dialog id="dialog-id">
+        <div class="dialog_content">
+          <svg
+            class="dialog_floppy"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 39 39"
+            widht="39"
+            height="39"
+          >
+            <use href="./svg/floppy.svg#save-icon"></use>
+          </svg>
+          <h2 class="dialog_info">Вставьте дискету, чтобы продолжить</h2>
+        </div>
         <form method="dialog">
-          <div class="dialog_content">
-            <img
-              src="./svg/floppy.svg"
-              alt="Иконка дискеты"
-              class="dialog_floppy"
-            />
-            <h2 class="dialog_info">Вставьте дискету, чтобы продолжить</h2>
-          </div>
           <button
             type="button"
             onclick="window['dialog-id'].close()"
